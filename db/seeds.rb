@@ -16,12 +16,15 @@ user_serialized = URI.open(url).read
 movies = JSON.parse(user_serialized)
 
 movies['results'].first(2).each do |movie|
-  Movie.new
+  new_movie = Movie.create!(
     title: movie['original_title'],
     overview: movie['overview'],
     poster_url: movie['poster_path'],
     rating: movie['vote_average']
+
   )
+
+  puts new_movie
 
 end
 
