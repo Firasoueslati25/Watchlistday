@@ -15,7 +15,7 @@ url = 'http://tmdb.lewagon.com/movie/top_rated'
 user_serialized = URI.open(url).read
 movies = JSON.parse(user_serialized)
 
-movies['results'].first(2).each do |movie|
+movies['results'].first(20).each do |movie|
   new_movie = Movie.create!(
     title: movie['original_title'],
     overview: movie['overview'],
