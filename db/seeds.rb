@@ -15,6 +15,4 @@ url = 'http://tmdb.lewagon.com/movie/top_rated'
 user_serialized = URI.open(url).read
 movie = JSON.parse(user_serialized)
 
-movie.save
-
 puts "#{movie['title']}"
