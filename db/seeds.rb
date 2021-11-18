@@ -17,10 +17,10 @@ movies = JSON.parse(user_serialized)
 
 movies["results"].each do |movie|
   Movie.new(
-    title: movie[‘original_title’],
-    overview: movie[‘overview’],
-    poster_url: movie[‘poster_path’],
-    rating: movie[‘vote_average’]
+    title: movie["original_title"],
+    overview: movie["overview"],
+    poster_url: movie["poster_path"],
+    rating: movie["vote_average"]
   )
 
 end
