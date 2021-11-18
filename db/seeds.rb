@@ -13,6 +13,9 @@ require 'open-uri'
 
 url = 'http://tmdb.lewagon.com/movie/top_rated'
 user_serialized = URI.open(url).read
-movie = JSON.parse(user_serialized)
+movies = JSON.parse(user_serialized)
 
-puts "#{movie['title']}"
+# puts "#{movies['title']}"
+
+# movie = Movies.new(name: "La Tour d'Argent")
+# movie.save
