@@ -1,0 +1,2 @@
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE DATABASE "rails_watch_list_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "rails_watch_list_test" ENCODING = 'unicode'[0m
